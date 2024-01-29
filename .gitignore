@@ -1,29 +1,37 @@
-# Ignore Node modules
-node_modules/
-
-# Ignore build and bundled files
+HELP.md
+.gradle
 build/
-dist/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# Ignore log files
-*.log
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# Ignore editor and OS files
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
 .vscode/
-.DS_Store
-Thumbs.db
-
-# Ignore npm debugging logs
-npm-debug.log*
-
-# Ignore client build folders
-client/build/
-client/node_modules/
-
-# Ignore server build folders
-server/build/
-server/node_modules/
-
-angular-client/src/environments/environment.development.ts
-angular-client/src/environments/environment.ts
-angular-client/angular-client-win32-x64/
